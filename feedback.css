@@ -1,0 +1,82 @@
+h3{
+    color: rgb(0, 0, 0);
+    background-color: rgb(185, 195, 206);
+    padding-block: 2px;
+    height: 30px;
+    border-radius: 10px;
+    padding-left: 10px;
+}
+
+body{
+    background-color: #2d2c62;
+}
+
+.logo {
+    font-size: 25px;
+    font-weight: bolder;
+}
+
+button {
+    background-color: rgb(122, 7, 7);
+    transition:aquamarine;
+    color: rgb(184, 187, 13);;
+}
+    
+button:active{
+    transform: scale(0.95);
+}
+
+.navbal {
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgb(122, 7, 7);
+    padding: 15px;
+    color: rgb(184, 187, 13);
+    border-radius: 10px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li{
+    margin: 0 10px;
+}
+
+.nav-links a{
+    color: rgb(184, 187, 13);
+    text-decoration: none;
+    padding: 10px;
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    background-color: rgb(38, 7, 122);
+    border-radius: 50px;
+}
+
+.menu-icon{
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
+    color: rgb(184, 187, 13);
+}
+
+#menu-toogle{
+    display: none;
+}
+
+@media(max-width: 600px){
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        background-color: rgb(122, 7, 7);
+        position: absolute;
+        top: 50px;
+        left: 0;
+        width: 100%;
+        text-align: center;
+    }
+}
